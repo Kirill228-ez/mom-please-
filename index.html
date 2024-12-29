@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Польза персонального компьютера</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Общие стили */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Шапка */
+        header {
+            background: linear-gradient(135deg, #4CAF50, #388E3C);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        /* Навигация */
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #FFEB3B;
+        }
+
+        /* Основной контент */
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 36px;
+            color: #388E3C;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        section p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Картинки и анимация */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Кнопки */
+        .cta-button {
+            background-color: #FFEB3B;
+            color: #388E3C;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #FF9800;
+            transform: scale(1.05);
+        }
+
+        /* Параллакс эффект */
+        .parallax {
+            background-image: url('https://via.placeholder.com/1920x1080.png?text=Компьютеры+в+работе');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+        }
+
+        /* Подвал */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 36px;
+            }
+
+            section h2 {
+                font-size: 30px;
+            }
+
+            .cta-button {
+                font-size: 16px;
+            }
+
+            .image-container {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header>
+        <h1>Польза персонального компьютера</h1>
+        <p>Он помогает учиться, работать и отдыхать — открой все возможности!</p>
+        <nav>
+            <a href="#education">Образование</a>
+            <a href="#work">Работа</a>
+            <a href="#entertainment">Развлечения</a>
+        </nav>
+    </header>
+
+    <!-- Раздел Образование -->
+    <section id="education">
+        <h2>Как ПК помогает учиться?</h2>
+        <p>С помощью компьютера можно учиться, проходить онлайн-курсы, смотреть видеоуроки, искать информацию и читать книги. Весь мир знаний — на расстоянии одного клика!</p>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/300x200.png?text=Учеба+на+ПК" alt="Учеба">
+            <img src="https://via.placeholder.com/300x200.png?text=Онлайн+курсы" alt="Онлайн курсы">
+        </div>
+        <a href="#work" class="cta-button">Как ПК помогает в работе?</a>
+    </section>
+
+    <!-- Параллакс эффект -->
+    <div class="parallax"></div>
+
+    <!-- Раздел Работа -->
+    <section id="work">
+        <h2>Компьютер на работе</h2>
+        <p>В любой профессии ПК — это незаменимый инструмент. От работы в офисе до создания программ и дизайна — компьютер ускоряет работу, делает её проще и эффективнее.</p>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/300x200.png?text=Работа+на+ПК" alt="Работа на ПК">
+            <img src="https://via.placeholder.com/300x200.png?text=Офис" alt="Офис">
+        </div>
+        <a href="#entertainment" class="cta-button">Как ПК помогает развлекаться?</a>
+    </section>
+
+    <!-- Раздел Развлечения -->
+    <section id="entertainment">
+        <h2>Как ПК помогает развлекаться?</h2>
+        <p>На ПК можно смотреть фильмы, играть в игры, слушать музыку и общаться с друзьями. Это идеальный способ провести свободное время!</p>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/300x200.png?text=Игры" alt="Игры">
+            <img src="https://via.placeholder.com/300x200.png?text=Фильмы" alt="Фильмы">
+        </div>
+        <a href="#education" class="cta-button">Вернуться к образованию</a>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <p>&copy; 2024 Мой сайт о компьютерах. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
